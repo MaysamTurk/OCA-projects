@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maysam's Portfolio</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+    
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "picture info" 
+            "picture info";
+        height: 60rem;
+
+    }
+    .picture {
+              width: 25em;
+              margin-left: 5%;
+              border-radius: 8%;
+              box-shadow: rgb(173, 41, 41) 0.5em 0.5em;
+             }
+        .home {
+margin-left:30%;   
+margin-top: -30rem;
+font-size: 2rem;
+box-sizing: border-box;
+   }
+
+
+             @media(max-width: 1250px) {
+            .container {
+                grid-template-areas:
+                    "header header"
+                    "picture intro"
+                    "picture intro"
+            }
+        }
+
+    
+
+    @media(min-width: 500px) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "picture"
+                    "intro"
+                ;
+            }
+        }
+</style>
+</head>
+<body>
+    <div id="bg">
+    <div class="container">
+        <header class="header">
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a class="active" href="about.html">ABOUT</a></li>
+            <li><a href="skills.html">SKILLS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </header>
+        <img src="mm.jpg" alt="my pic" width="450" height="590" class="picture">
+
+        <section class="info">
+            <div class="home">
+
+                       <h2 style="color:rgb(201, 18, 18);">HI THERE!</h2><br>
+                <p>
+                    My name is Maysam, and I am from Jordan, I am 25 years old.<br>
+                    I have a Bachelor's degree focused in 
+                    Human Nutrition and Dietetics <br>from University of Jordan, and I have some
+                    experience on this field,<br> but also I love coding, So I joined the Coding academy by Orange,<br>
+                    and I'm still training there to gain experience, technical and soft skills<br> to be a Full stack developer soon.
+                </p>
+            
+</div>
+
+</section>
+</section>
+
+</div>
+</div>
+</body>
+</html>

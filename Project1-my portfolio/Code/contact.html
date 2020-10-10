@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maysam's Portfolio</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+        a:link, a:visited {
+  background-color:rgb(201, 18, 18);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: black;
+  padding: 10px;
+}
+.links {
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+    font-size: 1rem;
+}
+
+@media(max-width: 1250px) {
+            .container {
+                grid-template-areas:
+                    "header header header"
+                    "contact conract contact"
+                    "links links links"
+            }
+        }
+
+    
+
+    @media(min-width: 500px) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "contact"
+                    "links"
+                ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="bg">
+    <div class="container">
+        <header class="header">
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="skills.html">SKILLS</a></li>
+            <li><a class="active" href="contact.html">CONTACT</a></li>
+          </ul>
+        </header>
+        <div class="contact">
+            <h3>CONTACT ME DIRECTLY:</h3><hr>
+            <ol>
+                <dd><strong>Maysam Al-Turk</strong></dd><hr><br>
+                <dd><strong>Amman - Jordan</strong></dd><hr><br>
+                <dd><strong>maysam.turkk@gmail.com</strong></dd><hr><br>
+                <dd><strong>+962 77 898 23 11</strong></dd>
+            </ol>
+            </header>
+        </div>
+        <div class="links">
+            <h3>Follow me:</h3>
+<a href="https://www.linkedin.com/in/maysamturk/" target="_blank">Linked In</a>
+<a href="https://web.facebook.com/maysam.turk" target="_blank">Facebook</a>
+<a href="https://github.com/MaysamTurk" target="_blank">GitHub</a>
+<br><hr>
+<form>
+    <h4>Fill the below fields if you want to work with us:</h4>
+    <div class="form-group">
+      <label for="yname"><strong>Your name:</strong></label>
+      <input type="name" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="Phone"><strong>Phone number:</strong></label>
+      <input type="tel" class="form-control">
+    </div>
+    
+    <div class="form-group">
+      <label for="text"><strong>Description</strong></label>
+      <input type="text" class="form-control" id="text" placeholder="Description">
+    </div>
+    <button type="button" class="btn btn-info">Send</button>
+  </form>
+</div>
+</div>
+        </div>
+        
+</body>
+</html>

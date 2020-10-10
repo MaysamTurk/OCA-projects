@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  font-family: URW Chancery L, cursive;
+
+
+}
+#bg {
+height: 67rem;
+background-image: url("https://papers.co/wallpaper/papers.co-vk56-android-lollipop-material-design-white-pattern-25-wallpaper.jpg");
+
+
+}
+.header {
+  grid-area: header;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  font-size: 22px;
+
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgb(201, 18, 18);
+position: sticky;
+top: 0;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 20px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: rgb(131, 131, 131);
+}
+
+.active {
+background-color: #333;
+}
+.contact {
+  margin: 30px;
+  padding: 30px;
+  font-size: 1rem;
+}

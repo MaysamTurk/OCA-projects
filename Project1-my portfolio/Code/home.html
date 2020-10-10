@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maysam's Portfolio</title>
+  <link rel="stylesheet" href="style.css"> 
+
+  <style>
+    
+        #container {
+            display: grid;
+            grid-template-areas:
+                "header header header "
+                "content conten conten"
+                "footer footer footer"
+            ;
+        }
+        .content {
+  grid-area: content;
+  height: 60rem;
+  text-align: center;
+  padding: 10rem;
+  font-size: 45px;
+  text-shadow: rgb(0, 0, 0) 2px 2px;
+  color: rgb(201, 18, 18);
+
+}
+
+
+.footer {
+            grid-area: footer;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+@media (max-width: 1250px) {
+            .container {
+                grid-template-areas:
+                    "header header"
+                    "content content"
+                    "footer footer"
+            }
+        }
+
+        @media(min-width: 500px) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "content"
+                    "footer"
+                ;
+            }
+        }
+  </style>
+</head>
+<body>
+  <div id="bg">
+  <div id="container">
+    <header class="header">
+      
+      <ul>
+        <li><a class="active" href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="skills.html">SKILLS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    
+    </header>
+    </div>
+    <section class="content">
+      <h1><strong>Maysam Türk</strong></h1><br>
+      <p>Nutritionist | Web Developer</p>
+  </section>
+
+  <footer class="footer">
+    <p><strong>Copyright &copy; 2020</strong></p>
+</footer>
+</div>
+</body>
+</html>
