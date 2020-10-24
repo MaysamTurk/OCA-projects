@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>TODO List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="../List/logo.png">
+
+</head>
+<header class="header">
+  <div class="logo">
+    <a href="../HomePage/index.html">
+
+      <img class="logo" src="../List/logo.png" alt="" />
+    </a>
+  </div>
+  <div class="navigation">
+    <ul>
+      <a style="  text-decoration: none;
+      " href="../HomePage/index.html">
+
+        <li>Home</li>
+      </a>
+      <a style="  text-decoration: none;
+      " href="../Form/form.html">
+
+        <li>Form</li>
+      </a>
+      <a style="  text-decoration: none;
+      " href="../List/list.html">
+
+        <li>TDL</li>
+      </a>
+      <a style="  text-decoration: none;
+      " href="../Calculator/calculator.html">
+
+        <li>Calculator</li>
+      </a>
+      <li class="dropdown">
+        <span onclick="font()">Font</span>
+        <div id="dropdownContent">
+          <button class="btn" onclick="changeFont('Times')" style="font-family: Times">
+            Times
+          </button>
+
+          <button class="btn" onclick="changeFont('cursive')" style="font-family: cursive">
+            Cursive
+          </button>
+
+          <button class="btn" onclick="changeFont('Arial')" style="font-family: Arial">
+            Arial
+          </button>
+
+          <button class="btn" onclick="changeFont('Monaco')" style="font-family: Monaco">
+            Monaco
+          </button>
+
+          <button class="btn" onclick="changeFont('Courier')" style="font-family: Courier">
+            Courier
+          </button>
+        </div>
+      </li>
+      <li>
+        <label class="switch">
+          <input type="checkbox" />
+          <span onclick="darkLightMode()" class="slider round"></span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<body>
+  <h1><span class="title">TODO</span>List</h1>
+  <div class="incompleteTasks">
+    <input type="text" class="input" onmousemove="addButton(this)" onmouseout="Button(this)" onclick="hideAlert()"
+      placeholder="What Do You Want to Do..." />
+
+    <button class="add"><b>+</b></button>
+  </div>
+  <div id="alert">Please fill out the field!</div>
+  <hr style="border: 2px solid #5ca4a9; background-color: #5ca4a9; margin: 5rem" />
+  <h2 class="status"><span class="title">Your </span>&nbsp;Tasks</h2>
+
+  <div class="container"></div>
+  <hr style="border: 2px solid #5ca4a9; background-color: #5ca4a9; margin: 5rem" />
+  <button class="saveButton" onclick="saveToLocal()">Save Data</button>
+  <button class="clearButton" onclick="clearLocal()">Delete Data</button>
+
+  <footer class="footer">
+    <div class="floatFooter">
+      <h3>All Rights Reserved © MHM</h3>
+    </div>
+  </footer>
+
+  <script language="javascript" type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator </title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="darkMood.css">
+
+    <link rel="stylesheet" href="">
+    <link rel="shortcut icon" type="image/x-icon" href="Pic/logo.png">
+
+
+</head>
+
+<body>
+
+    <article class="Container">
+
+
+        <header class="header">
+            <div class="logo">
+                <a href="../HomePage/index.html">
+
+                    <img class="logo" src="Pic/logo.png" alt="">
+                </a>
+            </div>
+
+
+            <div class="navigation">
+
+                <ul>
+                    <a style="  text-decoration: none;
+        " href="../HomePage/index.html">
+
+                        <li>Home</li>
+                    </a>
+                    <a style="  text-decoration: none;
+         " href="../Form/form.html">
+
+                        <li>Form</li>
+                    </a>
+                    <a style="  text-decoration: none;
+        " href="../List/list.html">
+
+                        <li>TDL</li>
+                    </a>
+                    <a style="  text-decoration: none;
+                    " href="../Calculator/calculator.html">
+
+                        <li>Calculator</li>
+                    </a>
+
+
+                </ul>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <section id="calculator">
+
+            <p id="errors"> </p>
+            <div class="calculatorHead">
+
+                <input class="input " type="text" id="OutPut" value="0">
+
+            </div>
+            <div class="calculatorHead">
+
+                <p class="input Answer " id="Results"> Answer: </p>
+            </div>
+
+
+            <div id="buttons">
+
+                <button onclick="input('(')">(</button>
+                <button onclick="input(')')">)</button>
+                <button onclick="input('%')">%</button>
+                <button class="bacRed" onclick="Delete()">del</button>
+                <button class="bacRed" onclick="clears('OutPut')">C</button>
+
+
+                <button class='numbers' onclick="input('7')">7</button>
+                <button class='numbers' onclick="input('8')">8</button>
+                <button class='numbers' onclick="input('9')">9</button>
+                <button onclick="input('*')">×</button>
+                <button onclick="input('/')">÷</button>
+
+
+                <button class='numbers' onclick="input('4')">4</button>
+                <button class='numbers' onclick="input('5')">5</button>
+                <button class='numbers' onclick="input('6')">6</button>
+                <button onclick="input('+')">+</button>
+                <button onclick="input('-')">-</button>
+
+
+                <button class='numbers' onclick="input('1')">1</button>
+                <button class='numbers' onclick="input('2')">2</button>
+                <button class='numbers' onclick="input('3')">3</button>
+                <button class="Power" onclick="input('p(')">
+
+                    x<sup style="font-size: medium;">y</sup>
+
+                    <span class="OnHoverPower">p(x, y)</span>
+
+
+                </button>
+                <button onclick="input('!(')">!(</button>
+
+                <button class='numbers' onclick="input('0')">0</button>
+                <button onclick="input('.')">.</button>
+                <button id="myInput" onclick="Equa()">=</button>
+                <button onclick="Answer()">Ans</button>
+                <button onclick="input('abs(')">abs</button>
+
+
+
+
+            </div>
+
+
+        </section>
+
+        <section id='historys'>
+            <h3>History</h3>
+            <button class='clearHistory' onclick="clears('history')">C</button>
+            <div id="history">
+
+
+
+            </div>
+        </section>
+
+        <footer class="footer">
+
+            <div class="floatFooter">
+
+                <h3>All Rights Reserved © MHM
+                </h3>
+
+            </div>
+
+
+
+
+        </footer>
+
+    </article>
+
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>

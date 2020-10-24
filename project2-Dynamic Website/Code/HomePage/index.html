@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../HomePage/logo.png">
+
+
+  <title>Home Page</title>
+</head>
+
+<body style="background: #e6ebe0">
+  <header class="header">
+    <div class="logo">
+      <a href="../HomePage/index.html">
+        <img class="logo" src="../HomePage/logo.png" alt="" />
+      </a>
+    </div>
+    <div class="navigation">
+      <ul>
+
+        <a style="  text-decoration: none;
+        " href="../HomePage/index.html">
+          <li>Home Page</li>
+        </a>
+        <a style="  text-decoration: none;
+        " href="../Form/form.html">
+          <li>Sign Up</li>
+
+        </a>
+        <li>
+          <div class="dropdown">
+            <span onclick="Color()" style="
+                  background: #e6ebe0;
+                  border-radius: 50%;
+                  padding: 0.3rem 2.5rem 1.5rem 2.5rem;
+                "></span>
+            <div id="dropdownContent">
+              <button class="btnBlue" onclick="changeColor('blue')" style="background-color: blue"></button>
+
+              <button class="btnPink" onclick="changeColor('pink')" style="background-color: pink"></button>
+
+              <button class="btnBlack" onclick="changeColor('black')" style="background-color: black"></button>
+              <button class="btnGray" onclick="changeColor('gray')" style="background-color: gray"></button>
+              <button class="btnWhite" onclick="changeColor('white')" style="background-color: white"></button>
+
+              <button class="btnLightGreen" onclick="changeColor('#e6ebe0')" style="background-color: #e6ebe0"></button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="https://i.ytimg.com/vi/lGfWirQASMA/maxresdefault.jpg" alt="New " />
+
+          <p>Do you want to teach your child mathematics?</p>
+        </div>
+
+        <div class="item">
+          <img
+            src="https://www.gannett-cdn.com/presto/2020/07/29/PPPO/afcb9a5c-b62c-4c7c-ad05-d1719e44a716-virtual_learning_stock.PNG?auto=webp&crop=1080,608,x0,y83&format=pjpg&width=1200"
+            width="1280px" alt="" />
+
+          <p>Does online learning make matters more difficult?</p>
+        </div>
+
+        <div class="item">
+          <img src="https://cdn.motherhood.com.my/wp-content/uploads/2017/09/30221357/MathKids.png" alt="" />
+          <p>Here is our SOLUTION!</p>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="floatFooter">
+      <h3>All Rights Reserved © MHM</h3>
+    </div>
+  </footer>
+
+  <script>
+    $(document).ready(function () {
+      $("button").mouseover(function () {
+        $("button").css("opacity", "1");
+      });
+      $("button").mouseout(function () {
+        $("button").css("opacity", "0.5");
+      });
+    });
+
+    function changeColor(colorName) {
+      document.body.style.background = colorName;
+    }
+
+    function Color() {
+      var x = document.getElementById("dropdownContent");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>

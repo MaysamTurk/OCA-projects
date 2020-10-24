@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM</title>
+  <link rel="stylesheet" href="index2.css">
+  <link rel="shortcut icon" type="image/x-icon" href="Pic/logo.png">
+
+
+<body>
+
+
+
+  <div class="modal">
+    <header class="header">
+      <div class="logo">
+        <a href="../HomePage/index.html">
+
+          <img class="logo" src="Pic/logo.png" alt="" />
+        </a>
+      </div>
+      <div class="navigation">
+        <ul>
+          <a style="  text-decoration: none;
+          " href="../HomePage/index.html">
+
+            <li>Home</li>
+          </a>
+          <a style="  text-decoration: none;
+          " href="../Form/form.html">
+
+            <li>Form</li>
+          </a>
+          <a style="  text-decoration: none;
+          " href="../List/list.html">
+
+            <li>TDL</li>
+          </a>
+          <a style="  text-decoration: none;
+          " href="../Calculator/calculator.html">
+
+            <li>Calculator</li>
+          </a>
+          <li>
+            <label class="switch">
+              <input type="checkbox" />
+              <span onclick="darkLightMode()" class="slider round"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+
+    <form class="formBox">
+      <div class="container">
+        <h1>Sign Up</h1>
+        <p style="color: #e6ebe0; padding-top: 10px;">Please fill in this form to create an account:</p>
+        <hr>
+        <label for="name"><b>User name:</b></label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" title="Must contain minimum 5 letters"
+          onblur="GoOut('name')" required>
+
+        <label for=" email"><b>Email</b></label>
+        <input type="text" id="email" name="email" placeholder="Enter Email"
+          title="Must contain at least one character (also number or whatever except another @ or whitespace before @, at least two characters or whatever except another @ or whitespace after @ and one dot in between."
+          onblur="GoOut('email')" required>
+
+        <label for=" birth"><b>Date of birth:</b></label>
+        <input type="date" id="date" name="date" placeholder="Enter your birth" onblur="GoOut('date')" required>
+
+        <label for=" phone"><b>Phone number:</b></label>
+        <input type="text" id="phone" name="phone" placeholder="Enter phone number"
+          title="Must contain only numbers, and 10 digits." onblur="GoOut('phone')" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" id="psw" name="psw" placeholder="Enter password" onfocus="getMessage('psw')"
+          onfocus="getMessage('psw')"
+          title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+          required>
+
+        <label>
+          <input type="checkbox" name="remember" class="checkBox" style="margin-bottom:1rem" onclick="Checked(this) ">
+          By creating an account you agree to our <a href="#" style="color:rgb(0, 20, 201)">Terms & Privacy</a>.
+        </label>
+        <div class="clearfix">
+
+
+
+
+          <button type="submit" onclick="LocalStorage()" class="signupbtn1" id="creat-account" disabled>Create
+            account</button>
+
+
+
+          <button type="submit" class="signupbtn2" id="save-information" onclick="SessionStorage()" disabled>Save
+            Information</button>
+
+          <button type="button" class="clearbtn" onclick="clearLocal()" value="Reset">Clear all</button>
+
+
+        </div>
+      </div>
+
+    </form>
+
+
+
+    <footer class="footer">
+      <div class="floatFooter">
+        <h3>All Rights Reserved © MHM
+        </h3>
+      </div>
+    </footer>
+  </div>
+
+  <div id="message">
+    <h3>Password must contain the following:</h3>
+    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+    <p id="number" class="invalid">A <b>number</b></p>
+    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+  </div>
+
+  <script src="index2.js"></script>
+
+
+</body>
+
+</html>

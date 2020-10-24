@@ -1,0 +1,377 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #E6EBE0;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.header {
+  background-color: #5CA4A9;
+  box-shadow: #9BC1BC;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 9vh;
+  overflow: hidden;
+
+}
+
+.logo {
+  width: 8vh;
+  height: 8vh;
+}
+
+.navigation {
+  margin-left: 1vw;
+  font-size: 28px;
+  float: left;
+}
+
+.navigation ul {
+  align-items: center;
+  list-style-type: none;
+  display: flex;
+}
+
+.navigation ul li {
+  padding: 2vw;
+  color: #E6EBE0;
+}
+
+.navigation ul li:hover {
+  background-color: #9BC1BC;
+  transform: scaleX(1.1);
+  cursor: pointer;
+}
+
+
+/* Full-width input fields */
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 0.4rem 0 1rem 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 5rem;
+
+}
+
+/* Add a background color when the inputs get focus */
+input:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: black;
+  color: white;
+  padding: 1rem 1rem;
+  margin: 0.5rem 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  border-radius: 5rem;
+
+}
+
+button:hover {
+  opacity: 1;
+}
+
+/* Extra styles for the clear button */
+.clearbtn {
+  padding: 1rem;
+  background-color: #ED6A5A;
+  border: none;
+  cursor: pointer;
+
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.signupbtn1 .signupbtn2 {
+  float: left;
+  width: 30%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  /*background-image: url("https://www.pngkit.com/png/full/408-4083934_kids-background-2-01-kids-background.png");*/
+  margin-top: 0;
+
+}
+
+#backgroundIMG {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.05;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Form/Box */
+.formBox {
+  background-color: #9BC1BC;
+  margin: 2% auto 2% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+
+  width: 50%;
+  /* Could be more or less, depending on screen size */
+
+}
+
+/* The message box is shown when the user clicks on the field */
+#message {
+  display: none;
+  background: #f1f1f1;
+  color: #000;
+  position: absolute;
+  bottom: 10vh;
+  left: 20px;
+  padding: 20px;
+  margin: 10px;
+  width: fit-content;
+  border-radius: 20px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: rgb(178, 231, 109);
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+.checkBox {
+  width: 1.4rem;
+  height: 1rem;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: flex;
+}
+
+button {
+  font-weight: bolder;
+  font-size: 0.9rem;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+  position: relative;
+  cursor: pointer;
+  margin: 5px;
+
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+button:hover .highlight {
+  opacity: 1;
+}
+
+.footer {
+
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+
+
+  background-color: #5CA4A9;
+  box-shadow: 0px 0px 5px 0px #9BC1BC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #E6EBE0;
+
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #E6EBE0;
+  transition: 0.4s;
+}
+
+.slider:after {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #5CA4A9;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked+.slider {
+  background-color: #262626;
+}
+
+input:checked+.slider:after {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:after {
+  border-radius: 50%;
+}
+
+.dark-mode {
+  color: #E6EBE0;
+  background: #262626;
+}
+
+/* Change styles for clear button and signup buttons on extra small screens */
+@media screen and (max-width: 480px) {
+
+  .footer {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .modal .logo {
+    height: 5vh;
+    width: 5vh;
+  }
+
+  .modal .header ul li {
+    font-size: large;
+    padding: 0.15rem;
+    margin: 0.1rem 0.3rem 0 0;
+  }
+
+  .switch {
+    width: 30px;
+    height: 17px;
+  }
+
+  .slider::after {
+    margin-bottom: -0.12rem;
+    height: 13px;
+    left: 2px;
+    width: 13px;
+  }
+
+  input:checked+.slider:after {
+    transform: translateX(12px);
+  }
+
+}
+
+@media screen and (max-width: 1100px) {
+
+  #message {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .clearlbtn,
+  .signupbtn1,
+  .signupbtn2,
+  .formBox {
+    width: 90%;
+  }
+
+
+
+
+}
